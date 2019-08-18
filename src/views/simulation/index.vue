@@ -62,7 +62,6 @@
       <typography variation="title" class="spacing-1"> VFG-4579 </typography>
     </div>
 
-
   </div>
 </template>
 
