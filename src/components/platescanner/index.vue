@@ -30,7 +30,6 @@ export default {
     initVideoStreaming () {
       navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
-          console.log(stream)
           this.$refs.video.srcObject = stream;
           this.$refs.video.play()
         })
