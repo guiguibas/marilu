@@ -77,7 +77,7 @@ git pull origin back_end
 
 ##### libs
 pip freeze > requirements.txt
-pip install requests
+pip install -r requirements.txt
 
 ##### django
 python manage.py runserver ec2-18-205-23-188.compute-1.amazonaws.com:80
