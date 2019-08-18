@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     initVideoStreaming () {
-      navigator.mediaDevices.getUserMedia({ video: true })
+      navigator.mediaDevices.getUserMedia({video: {facingMode: {exact: "environment"}}})
         .then(stream => {
           this.$refs.video.srcObject = stream;
           this.$refs.video.play()
