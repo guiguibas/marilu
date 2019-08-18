@@ -16,5 +16,7 @@ export default {
 .page-header {
   @include grid();
   padding: $spacing-4 $spacing-4 $spacing-5 $spacing-4;
+  overflow: hidden;
+  border-radius: 0px 0px 8px 8px;
 }
 </style>

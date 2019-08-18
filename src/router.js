@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import loading from './views/loading';
+import scanner from './views/scanner';
 
 Vue.use(Router);
 
@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'loading',
-      component: loading
+      name: 'scanner',
+      component: scanner
     },
     {
       path: '/scanner',

@@ -12,16 +12,13 @@
 </template>
 
 <script>
-import platescanner from '@/components/platescanner';
-import pageheader from '@/components/pageheader';
-import logo from '@/components/logo';
 
 export default {
   name: 'scanner',
   components: {
-    platescanner,
-    pageheader,
-    logo
+    platescanner: () => import('@/components/platescanner'),
+    pageheader: () => import('@/components/pageheader'),
+    logo: () => import('@/components/logo')
   }
 };
 </script>
