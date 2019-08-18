@@ -59,6 +59,8 @@ export default {
     height: 185px;
     margin-bottom: $spacing-8;
     background: #C4C4C4;
+    background: url('~@/assets/car.png');
+    background-position: initial;
   }
 
   >.simulacao {

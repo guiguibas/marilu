@@ -1,6 +1,6 @@
 <template>
   <div class="car">
-    <box as="img" src=""/>
+    <box/>
 
     <div class="contentwrapper">
       <div class="namewrapper">
@@ -36,6 +36,9 @@ export default {
     @include column(2);
     background: gray;
     height: 128px;
+
+    background: url('~@/assets/car.png');
+    background-position: initial;
   }
 
   > .contentwrapper {
