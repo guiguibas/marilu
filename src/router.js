@@ -12,10 +12,17 @@ export default new Router({
       name: 'scanner',
       component: scanner
     },
+
     {
-      path: '/scanner',
-      name: 'scanner',
-      component: () => import('./views/scanner')
+      path: '/carlist',
+      name: 'carlist',
+      component: () => import('./views/carlist')
+    },
+
+    {
+      path: '/carinfo',
+      name: 'carinfo',
+      component: () => import('./views/carinfo')
     },
   ],
 });

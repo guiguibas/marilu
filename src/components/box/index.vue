@@ -36,5 +36,9 @@ export default {
   &.-shadow {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.1);
   }
+
+  &.-outline {
+    border: 1px solid #BBBBBB;
+  }
 }
 </style>

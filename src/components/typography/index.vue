@@ -55,7 +55,8 @@ export default {
   }
 
   &.-value,
-  &.-title {
+  &.-title,
+  &.-title2 {
     color: #414141;
   }
 
@@ -68,6 +69,12 @@ export default {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+  }
+
+  &.-title2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
   }
 
 }
