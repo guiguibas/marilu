@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Loading from './views/loading';
+import scanner from './views/scanner';
 
 Vue.use(Router);
 
@@ -9,13 +9,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Loading',
-      component: Loading
+      name: 'scanner',
+      component: scanner
     },
+
     {
-      path: '/scanner',
-      name: 'Scanner',
-      component: () => import('./views/scanner')
+      path: '/carlist',
+      name: 'carlist',
+      component: () => import('./views/carlist')
+    },
+
+    {
+      path: '/carinfo',
+      name: 'carinfo',
+      component: () => import('./views/carinfo')
+    },
+
+    {
+      path: '/simulation',
+      name: 'simulation',
+      component: () => import('./views/simulation')
     },
   ],
 });

@@ -3,34 +3,39 @@
     <video class="video" ref="video"/>
 
     <div class="hint">
-      <div class="illustration">a</div>
+      <illustration fileName="ilustracao-placa.svg"/>
 
-      <div class="text">
+      <typography>
         Escaneie a placa de um veículo
-      </div>
+      </typography>
     </div>
   </box>
 </template>
 
 <script>
 import box from '@/components/box';
+import typography from '@/components/typography';
+import illustration from '@/components/illustration';
 
 export default {
   name: 'platescanner',
   components: {
-    box
+    box,
+    typography,
+    illustration
   },
+
   props: {
     variation: {
       type: String,
       default: ''
     }
   },
+
   methods: {
     initVideoStreaming () {
-      navigator.mediaDevices.getUserMedia({ video: true })
+      navigator.mediaDevices.getUserMedia({video: {facingMode: {exact: "environment"}}})
         .then(stream => {
-          console.log(stream)
           this.$refs.video.srcObject = stream;
           this.$refs.video.play()
         })
@@ -64,15 +69,16 @@ export default {
     bottom: 0;
     padding: $spacing-4;
 
-    color: #fff;
     background: rgba(0, 0, 0, 0.5);
 
     > .illustration {
-      @include column(2)
+      @include column(2);
+      width: 100%;
     }
 
-    > .text {
-      @include column(3)
+    > .typography {
+      @include column(3);
+      color: #fff;
     }
   }
 }
