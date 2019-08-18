@@ -1,4 +1,6 @@
 '''
+    identifica as informacoes do carro pela placa
+
     exemplo
         Plate2Car.exec('IMI-0175')
     retorno
@@ -21,6 +23,7 @@ class Plate2Car(object):
                    "Cookie": "__cfduid=d5de75a3b4f8bf134d17b8037c9f9df861566082245; USID=29fbe229d00c9126fb7e579bcc28ebe3",
                    "Accept-Encoding": "gzip, deflate"}
 
+        plate.replace('-', '')
         r = requests.post(url, data={'placa': plate}, headers=headers)
         s = r.text
 

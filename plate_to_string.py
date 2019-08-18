@@ -1,4 +1,6 @@
 """
+    transforma a imagem da placa em string
+
     como utilizar:
         Plate2Str.process(im=r"img\anexo1.jpg")
     retorno:
@@ -22,6 +24,7 @@ class Plate2Str(object):
                 headers={'Authorization': f'Token {token["car_plate"]}'})
             response = response.json()
             plate = str(response['results'][0]['plate']).upper().strip()
+            plate = plate.replace('-', '')
             if len(plate) != 7:
                 return {'result': 'erro'}
             score = response['results'][0]['score']
