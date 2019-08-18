@@ -3,11 +3,11 @@
 
     <div class="labelwrapper">
       <div class="label">
-        <typography variation="description">{{ min }}</typography>
+        <typography variation="description">R$ {{ min }}</typography>
       </div>
 
       <div class="label">
-        <typography variation="description">{{ max }}</typography>
+        <typography variation="description">R$ {{ max }}</typography>
       </div>
     </div>
     

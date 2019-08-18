@@ -24,7 +24,7 @@
         <typography variation="title2"> FAÇA UMA SIMULAÇÃO AGORA! </typography>
       </div>
 
-      <buttonn> SIMULAR </buttonn>
+      <buttonn @click.native="handleButtonClick"> SIMULAR </buttonn>
     </box>
 
   </div>
@@ -41,7 +41,12 @@ export default {
     pageheader: () => import('@/components/pageheader'),
     typography: () => import('@/components/typography'),
     rangeslider: () => import('@/components/rangeslider'),
-    illustration: () => import('@/components/illustration'),
+    illustration: () => import('@/components/illustration')
+  },
+  methods: {
+    handleButtonClick () {
+      this.$router.push('/simulation')
+    }
   }
 };
 </script>

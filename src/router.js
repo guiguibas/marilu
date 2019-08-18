@@ -24,5 +24,11 @@ export default new Router({
       name: 'carinfo',
       component: () => import('./views/carinfo')
     },
+
+    {
+      path: '/simulation',
+      name: 'simulation',
+      component: () => import('./views/simulation')
+    },
   ],
 });
