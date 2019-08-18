@@ -33,7 +33,7 @@ backend: https://github.com/guiguibas/marilu/tree/back_end
 
 frontend: https://github.com/guiguibas/marilu/tree/frontend
 
-PPT: 
+PPT: https://docs.google.com/presentation/d/1Py4A5jA3VGxEuDbtp40u9RfaYMiBwAIsws-QW24SOkQ/edit?ts=5d590380#slide=id.p6
 
 
 ##### Grupo
